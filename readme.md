@@ -1,4 +1,4 @@
-```markdown
+
 # Email auto sender
 
 ## 🚀 Getting Started
