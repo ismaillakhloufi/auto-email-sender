@@ -4,12 +4,12 @@ from mailer import prepare_and_send
 
 def main():
     # 1) Extract emails from PDF and save to CSV
-    #emails = load_emails_from_pdf(PDF_FILE)
-    #if not emails:
-     #   raise SystemExit("⚠️ No valid emails found in PDF.")
-    #save_emails_to_csv(emails, CSV_FILE)
-    emails=["ismail.lakhloufi20@ump.ac.ma","kaouthardakkak@gmail.com","kaouthar.dakkak20@ump.ac.ma"]
-    print(emails)
+    emails = load_emails_from_pdf(PDF_FILE)
+    if not emails:
+        raise SystemExit("⚠️ No valid emails found in PDF.")
+    save_emails_to_csv(emails, CSV_FILE)
+    
+   
     # 2) Send emails with CV attached
     prepare_and_send(emails)
 
